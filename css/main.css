@@ -1,7 +1,7 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -74,9 +74,9 @@ a {
   display: none;
 }
 .header__wrapper {
+  gap: 64px;
   display: flex;
   align-items: center;
-  gap: 64px;
 }
 .header__logo {
   width: 136px;
@@ -87,6 +87,7 @@ a {
 }
 .header__btn {
   border: none;
+  color: #fbfcfe;
   padding: 15px 25px;
   background: #ba4270;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
@@ -96,7 +97,6 @@ a {
   line-height: 18px;
   letter-spacing: -0.115385px;
   z-index: 1000;
-  color: #fbfcfe;
   margin-left: auto;
 }
 .header__btn:hover {
@@ -110,10 +110,10 @@ a {
   cursor: pointer;
 }
 .header__link {
+  color: #36536b;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #36536b;
   mix-blend-mode: normal;
   opacity: 0.7;
 }
@@ -202,27 +202,31 @@ a {
   src: local(""), url("../fonts/public-sans-v14-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/public-sans-v14-latin-700.woff2") format("woff2"), url("../fonts/public-sans-v14-latin-700.woff") format("woff"), url("../fonts/public-sans-v14-latin-700.ttf") format("truetype"), url("../fonts/public-sans-v14-latin-700.svg#PublicSans") format("svg"); /* Legacy iOS */
 }
 .intro__wrapper {
+  gap: 183px;
   display: flex;
   align-items: center;
-  gap: 183px;
 }
 .intro__left {
   width: 546px;
 }
 .intro__title {
+  color: #36536b;
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 72px;
   letter-spacing: -0.553846px;
-  color: #36536b;
 }
 .intro__form {
   margin: 25px 0 16px 0;
 }
 .intro__btn {
+  position: relative;
+  z-index: 1000;
+  margin-left: -178px;
   border: none;
+  color: #fbfcfe;
   padding: 15px 25px;
   background: #ba4270;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
@@ -232,10 +236,6 @@ a {
   line-height: 18px;
   letter-spacing: -0.115385px;
   z-index: 1000;
-  color: #fbfcfe;
-  position: relative;
-  z-index: 1000;
-  margin-left: -178px;
 }
 .intro__btn:hover {
   background: #da6d97;
@@ -248,38 +248,38 @@ a {
   cursor: pointer;
 }
 .intro__input {
-  border: none;
   width: 445px;
   height: 48px;
+  color: #36536b;
   background: #fbfcfe;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   border-radius: 24px;
+  border: none;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   padding-left: 20px;
-  color: #36536b;
   mix-blend-mode: normal;
   opacity: 0.5;
 }
 .intro__text {
+  color: #6c8294;
   padding-left: 20px;
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  color: #6c8294;
 }
 .intro__span {
   color: #455664;
   font-weight: 700;
 }
 .intro__right {
+  z-index: 1;
+  width: 262.5px;
+  height: 499.43px;
   background-image: url(../../rasmlar/iPhone-X-Mockup.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 262.5px;
-  height: 499.43px;
-  z-index: 1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -343,34 +343,35 @@ a {
   content: url(../../rasmlar/Bitmap.png);
 }
 .company__wrapper {
+  gap: 131px;
   display: flex;
   align-items: center;
-  gap: 131px;
   padding: 50px 0;
 }
 .company__left {
-  width: 445px;
   z-index: 10;
+  width: 445px;
 }
 .company__title {
+  color: #fbfcfe;
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -0.369231px;
-  color: #fbfcfe;
 }
 .company__text {
   padding: 24px 0 32px 0;
+  color: #fbfcfe;
   font-size: 15px;
   line-height: 28px;
-  color: #fbfcfe;
   mix-blend-mode: normal;
   opacity: 0.7;
 }
 .company__btn {
   border: none;
+  color: #fbfcfe;
   padding: 15px 25px;
   background: #ba4270;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
@@ -380,7 +381,6 @@ a {
   line-height: 18px;
   letter-spacing: -0.115385px;
   z-index: 1000;
-  color: #fbfcfe;
   background: #1b262f;
   border: 2px solid white;
   width: 130px;
@@ -430,9 +430,9 @@ a {
     width: 80%;
   }
   .company__right {
-    background-image: url(../../rasmlar/company__2.png);
     width: 280px;
     height: 160px;
+    background-image: url(../../rasmlar/company__2.png);
   }
   .company__title {
     font-size: 32px;
@@ -451,9 +451,9 @@ a {
     width: 91%;
   }
   .company__right {
-    background-image: url(../../rasmlar/company__2.png);
     width: 80%;
     height: 160px;
+    background-image: url(../../rasmlar/company__2.png);
   }
   .company__title {
     font-size: 32px;
@@ -465,9 +465,9 @@ a {
   }
 }
 .easy__wrapper {
+  gap: 125px;
   display: flex;
   align-items: center;
-  gap: 125px;
 }
 .easy__left {
   width: 545px;
@@ -478,10 +478,10 @@ a {
   font-size: 15px;
 }
 .easy__top {
+  gap: 10px;
   display: flex;
   align-items: center;
   width: 500px;
-  gap: 10px;
   height: 80px;
   padding: 20px 50px;
   background-color: #36536b;
@@ -512,19 +512,19 @@ a {
   width: 445px;
 }
 .easy__title {
+  color: #36536b;
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -0.369231px;
-  color: #36536b;
 }
 .easy__text {
+  color: #6c8294;
   padding-top: 14px;
   font-size: 15px;
   line-height: 28px;
-  color: #6c8294;
   mix-blend-mode: normal;
   opacity: 0.7;
 }
@@ -601,9 +601,9 @@ a {
   position: relative;
 }
 .simple__wrapper {
+  gap: 175px;
   display: flex;
   align-items: center;
-  gap: 175px;
 }
 .simple__wrapper::before {
   position: absolute;
@@ -614,19 +614,19 @@ a {
   width: 445px;
 }
 .simple__title {
+  color: #36536b;
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -0.369231px;
-  color: #36536b;
 }
 .simple__text {
+  color: #6c8294;
   padding-top: 24px;
   font-size: 15px;
   line-height: 28px;
-  color: #6c8294;
 }
 .simple__right {
   position: relative;
@@ -705,9 +705,9 @@ a {
   }
 }
 .cards__wrapper {
+  gap: 30px;
   display: flex;
   align-items: center;
-  gap: 30px;
 }
 .cards__card {
   text-align: center;
@@ -724,11 +724,11 @@ a {
   color: #36536b;
 }
 .cards__text {
+  color: #6c8294;
   font-size: 15px;
   line-height: 25px;
   text-align: center;
   letter-spacing: -0.115385px;
-  color: #6c8294;
 }
 
 @media only screen and (max-width: 768px) {
@@ -775,27 +775,27 @@ a {
 }
 .ready__title {
   width: 445px;
+  color: #36536b;
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -0.369231px;
-  color: #36536b;
 }
 .ready__input {
   width: 445px;
-  border: none;
   width: 445px;
   height: 48px;
+  color: #36536b;
   background: #fbfcfe;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   border-radius: 24px;
+  border: none;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   padding-left: 20px;
-  color: #36536b;
   mix-blend-mode: normal;
   opacity: 0.5;
 }
@@ -808,8 +808,8 @@ a {
   .ready__wrapper {
     flex-direction: column;
     gap: 30px;
-    text-align: center;
     padding-top: 100px;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -873,11 +873,11 @@ a {
   color: #fbfcfe;
 }
 .footer__media {
+  gap: 25px;
+  z-index: 1;
+  margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 25px;
-  margin-left: auto;
-  z-index: 1;
 }
 
 path:hover {
@@ -927,11 +927,11 @@ path:hover {
   }
 }
 .modal {
-  display: block;
   position: absolute;
   z-index: 100;
   top: 0;
   right: 0;
+  display: block;
   transform: scale(0.1);
   visibility: hidden;
 }
@@ -945,11 +945,11 @@ path:hover {
   margin: 50px 10px 30px 200px;
 }
 .modal__list {
+  display: flex;
+  gap: 32px;
   padding-top: 20px;
   border-top: 1px solid #676868;
-  display: flex;
   flex-direction: column;
-  gap: 32px;
 }
 .modal__link {
   color: #fbfcfe;
@@ -964,9 +964,10 @@ path:hover {
   transition: all 0.5s linear;
 }
 .modal__btn {
-  margin-top: 32px;
   width: 260px;
+  margin-top: 32px;
   border: none;
+  color: #fbfcfe;
   padding: 15px 25px;
   background: #ba4270;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
@@ -976,7 +977,6 @@ path:hover {
   line-height: 18px;
   letter-spacing: -0.115385px;
   z-index: 1000;
-  color: #fbfcfe;
 }
 .modal__btn:hover {
   background: #da6d97;
@@ -989,7 +989,13 @@ path:hover {
   cursor: pointer;
 }
 .modal__lists {
+  position: absolute;
+  right: 25px;
+  z-index: 0;
+  display: none;
+  height: 45px;
   border: none;
+  color: #fbfcfe;
   padding: 15px 25px;
   background: #ba4270;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
@@ -999,13 +1005,7 @@ path:hover {
   line-height: 18px;
   letter-spacing: -0.115385px;
   z-index: 1000;
-  color: #fbfcfe;
-  display: none;
-  position: absolute;
-  right: 25px;
-  height: 45px;
   background: #6387a4;
-  z-index: 0;
 }
 .modal__lists:hover {
   background: #da6d97;

@@ -1,11 +1,15 @@
 .footer {
   position: relative;
+
   background: $company-bg__color;
+
+
   &::before {
     content: url(../../rasmlar/footer__mask.png);
     position: absolute;
     right: 0px;
     bottom: -5px;
+
     opacity: 0.15;
   }
   &__wrapper {
@@ -14,15 +18,17 @@
   }
   &__link {
     color: #969799;
+
     &:hover {
       color: #fbfcfe;
     }
   }
   &__media {
-    @include FlexStyle;
     gap: 25px;
-    margin-left: auto;
     z-index: 1;
+    margin-left: auto;
+
+    @include FlexStyle;
   }
 }
 path {

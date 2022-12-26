@@ -1,13 +1,17 @@
 .intro {
   &__wrapper {
-    @include FlexStyle;
     gap: 183px;
+
+    @include FlexStyle;
   }
 
   &__left {
     width: 546px;
   }
   &__title {
+    color: $title-color;
+
+
     font-family: "DM Serif Display";
     font-style: normal;
     font-weight: 400;
@@ -15,38 +19,40 @@
     line-height: 72px;
     letter-spacing: -0.553846px;
 
-    color: $title-color;
   }
   &__form {
     margin: 25px 0 16px 0;
   }
   &__btn {
-    @include Btn;
     position: relative;
     z-index: 1000;
+
     margin-left: -178px;
+    @include Btn;
   }
   &__input{
     @include Input;
   }
   &__text {
+    color: $text-color;
+
     padding-left: 20px;
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
-    color: $text-color;
   }
   &__span {
     color: #455664;
     font-weight: 700;
   }
   &__right {
+    z-index: 1;
+
+    width: 262.5px;
+    height: 499.43px;
     background-image: url(../../rasmlar/iPhone-X-Mockup.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 262.5px;
-    height: 499.43px;
-    z-index: 1;
   }
 }
 @media only screen and (max-width: 768px) {

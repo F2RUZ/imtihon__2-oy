@@ -1,35 +1,43 @@
 .company {
   position: relative;
+
   background: $company-bg__color;
+
+
   &::before {
     position: absolute;
     left: 0px;
+
     content: url(../../rasmlar/Bitmap.png);
   }
 
   &__wrapper {
-    @include FlexStyle;
     gap: 131px;
+
+    @include FlexStyle;
     padding: 50px 0;
   }
   &__left {
-    width: 445px;
     z-index: 10;
+
+    width: 445px;
   }
   &__title {
+    color: #fbfcfe;
+
     font-family: "DM Serif Display";
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 56px;
     letter-spacing: -0.369231px;
-    color: #fbfcfe;
   }
   &__text {
     padding: 24px 0 32px 0;
+    color: #fbfcfe;
+
     font-size: 15px;
     line-height: 28px;
-    color: #fbfcfe;
 
     mix-blend-mode: normal;
     opacity: 0.7;
@@ -49,6 +57,7 @@
   &__right {
     width: 536px;
     height: 103px;
+
     background-image: url(../../rasmlar/company.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,6 +68,7 @@
     &::before {
       content: url(../../rasmlar/mask__copy.png);
       width: 100%;
+
       opacity: 0.15;
     }
     &__wrapper {
@@ -81,10 +91,11 @@
     }
 
     &__right {
-      background-image: url(../../rasmlar/company__2.png);
-
+      
       width: 280px;
       height: 160px;
+
+      background-image: url(../../rasmlar/company__2.png);
     }
     &__title {
       font-size: 32px;
@@ -107,10 +118,11 @@
     }
 
     &__right {
-      background-image: url(../../rasmlar/company__2.png);
-
+      
       width: 80%;
       height: 160px;
+      
+      background-image: url(../../rasmlar/company__2.png);
     }
     &__title {
       font-size: 32px;

@@ -2,8 +2,9 @@
   position: relative;
 
   &__wrapper {
-    @include FlexStyle;
     gap: 175px;
+
+    @include FlexStyle;
     &::before {
       position: absolute;
       right: 0;
@@ -14,6 +15,8 @@
     width: 445px;
   }
   &__title {
+    color: $title-color;
+
     font-family: "DM Serif Display";
     font-style: normal;
     font-weight: 400;
@@ -21,19 +24,21 @@
     line-height: 56px;
     letter-spacing: -0.369231px;
 
-    color: $title-color;
   }
   &__text {
+    color: $text-color;
     padding-top: 24px;
+
     font-size: 15px;
     line-height: 28px;
-    color: $text-color
   }
   &__right {
     position: relative;
     bottom: -60px;
+
     width: 263px;
     height: 500px;
+
     background-image: url(../../rasmlar/iPhone-X-Mockup.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -41,6 +46,7 @@
   &__contain {
     width: 263px;
     height: 500px;
+    
     margin-left: 200px;
     background-image: url(../../rasmlar/succes__phone.png);
     background-repeat: no-repeat;

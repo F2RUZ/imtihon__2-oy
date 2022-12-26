@@ -1,14 +1,17 @@
 .modal {
-  display: block;
   position: absolute;
   z-index: 100;
   top: 0;
   right: 0;
+
+  display: block;
+
   transform: scale(0.1);
   visibility: hidden;
   &__wrapper {
     width: 300px;
     height: 600px;
+
     background-color: #1b262f;
     text-align: center;
   }
@@ -16,11 +19,12 @@
     margin: 50px 10px 30px 200px;
   }
   &__list {
-    padding-top: 20px;
-    border-top: 1px solid #676868;
     display: flex;
-    flex-direction: column;
     gap: 32px;
+    padding-top: 20px;
+
+    border-top: 1px solid #676868;
+    flex-direction: column;
   }
   &__link {
     color: #fbfcfe;
@@ -36,18 +40,20 @@
     }
   }
   &__btn {
-    margin-top: 32px;
     width: 260px;
+    margin-top: 32px;
     @include Btn;
   }
   &__lists {
-    @include Btn;
-    display: none;
     position: absolute;
     right: 25px;
-    height: 45px;
-    background: #6387a4;
     z-index: 0;
+
+    display: none;
+    
+    height: 45px;
+    @include Btn;
+    background: #6387a4;
     &:hover {
       background-color: #676868;
     }
