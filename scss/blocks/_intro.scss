@@ -1,0 +1,108 @@
+.intro {
+  &__wrapper {
+    @include FlexStyle;
+    gap: 183px;
+  }
+
+  &__left {
+    width: 546px;
+  }
+  &__title {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.553846px;
+
+    color: $title-color;
+  }
+  &__form {
+    margin: 25px 0 16px 0;
+  }
+  &__btn {
+    @include Btn;
+    position: relative;
+    z-index: 1000;
+    margin-left: -178px;
+  }
+  &__input{
+    @include Input;
+  }
+  &__text {
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: $text-color;
+  }
+  &__span {
+    color: #455664;
+    font-weight: 700;
+  }
+  &__right {
+    background-image: url(../../rasmlar/iPhone-X-Mockup.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 262.5px;
+    height: 499.43px;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    &__wrapper {
+      flex-direction: column;
+      flex-direction: column-reverse;
+      gap: 0px;
+    }
+    &__left {
+      width: 90%;
+      text-align: center;
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .intro {
+    &__left {
+      width: 80%;
+      text-align: center;
+    }
+    &__input {
+      width: 330px;
+    }
+    &__btn {
+      width: 330px;
+      margin: 24px 0;
+    }
+    &__title {
+      width: 100%;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 370px) {
+  .intro {
+    &__left {
+      width: 91%;
+      text-align: center;
+    }
+    &__input {
+      width: 300px;
+    }
+    &__btn {
+      width: 300px;
+      margin: 24px 0;
+    }
+    &__title {
+      width: 300px;
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.simple {
+  position: relative;
+
+  &__wrapper {
+    @include FlexStyle;
+    gap: 175px;
+    &::before {
+      position: absolute;
+      right: 0;
+      content: url(../../rasmlar/map__2.png);
+    }
+  }
+  &__left {
+    width: 445px;
+  }
+  &__title {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+
+    color: $title-color;
+  }
+  &__text {
+    padding-top: 24px;
+    font-size: 15px;
+    line-height: 28px;
+    color: $text-color
+  }
+  &__right {
+    position: relative;
+    bottom: -60px;
+    width: 263px;
+    height: 500px;
+    background-image: url(../../rasmlar/iPhone-X-Mockup.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__contain {
+    width: 263px;
+    height: 500px;
+    margin-left: 200px;
+    background-image: url(../../rasmlar/succes__phone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .simple {
+    &__wrapper {
+      flex-direction: column;
+      flex-direction: column-reverse;
+      gap: 0;
+      &::before {
+        content: none;
+      }
+    }
+    &__right {
+      right: 80px;
+    }
+    &__left {
+      width: 80%;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .simple {
+    &__wrapper {
+      gap: 0px;
+    }
+    &__left {
+      width: 100%;
+      margin-bottom: -100px;
+    }
+    &__right {
+      width: 200px;
+    }
+    &__contain {
+      width: 200px;
+      margin-left: 180px;
+    }
+    &__title{
+      font-size: 42px;
+      line-height: 42px;
+    }
+  }
+}
+@media only screen and (max-width: 370px) {
+  .simple {
+    &__wrapper {
+      gap: 0px;
+    }
+    &__left {
+      width: 91%;
+      margin-bottom: -100px;
+    }
+    &__right {
+      width: 200px;
+    }
+    &__contain {
+      width: 200px;
+      margin-left: 165px;
+    }
+    &__title{
+      width: 90%;
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}

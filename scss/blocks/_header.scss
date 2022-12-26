@@ -1,0 +1,111 @@
+.header {
+  position: relative;
+  &::before {
+    position: absolute;
+    right: 0px;
+    content: url(../../rasmlar/mark__mark.png);
+    opacity: 0.15;
+  }
+  &__modal {
+    display: none;
+  }
+  &__bar {
+    display: none;
+  }
+
+  &__wrapper {
+    @include FlexStyle;
+    gap: 64px;
+  }
+  &__logo {
+    width: 136px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 53px;
+  }
+  &__btn {
+    @include Btn;
+    margin-left: auto;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #36536b;
+
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    &:hover {
+      color: #000000;
+      transition: all 0.5s linear;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    &::before {
+      content: url(../../rasmlar/mask__copy.png);
+      z-index: 0;
+    }
+    &__wrapper {
+      gap: 80px;
+    }
+
+    &__list {
+      gap: 40px;
+    }
+    &__bar {
+      display: none;
+    }
+    &__btn{
+    margin-left: -20px;
+
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .header {
+    &::before {
+      content: url(../../rasmlar/mask__copy.png);
+    }
+    &__wrapper {
+      gap: 200px;
+    }
+    &__btn {
+      display: block;
+    }
+    &__bar {
+      display: block;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 370px) {
+  .header {
+    &::before {
+      content: url(../../rasmlar/mask__copy.png);
+    }
+    &__wrapper {
+      gap: 150px;
+    }
+    &__list {
+      display: none;
+    }
+    &__bar {
+      display: block;
+    }
+    &__btn {
+      display: none;
+    }
+  }
+}
